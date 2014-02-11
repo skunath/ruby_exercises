@@ -20,8 +20,12 @@ class ItemNumber < Item
   def display
     puts "Number: #{@number}"
     super()
-    
   end
+
+  def print_number()
+    puts "Item: #{@item} - #{@number}"
+  end
+
 end
 
 a = Item.new("TV", "Toshiba")
@@ -30,5 +34,7 @@ a.display
 puts "*" * 50
 b.display
 
+puts "&" * 50
+b.print_number()
     
   

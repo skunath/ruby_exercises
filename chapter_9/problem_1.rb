@@ -1,11 +1,16 @@
 class Tv
   @list_of_tvs = []
   
+  def self.what_kinds()
+    puts "test"
+    
+  end
+  
   
   def initialize(size, hd, standard)
     @size = size 
     @hd = hd
-    @stadard = standard
+    @standard = standard
     Tv.add_tv_to_list(self)
   end
 
@@ -27,6 +32,12 @@ class Tv
   end
   
 end
+
+puts Tv.what_kinds
+puts Tv.list
+
+
+puts "%" * 50
 
 
 new_tv = Tv.new(12,true, "ANSI")

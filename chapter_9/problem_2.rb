@@ -32,9 +32,9 @@ puts a_point_1.x
 a_point_2 = CPoint.new(3,4)
 puts a_point_2.x
 puts a_point_2.y
-
+puts "%" * 50
 puts a_point_1.find_slope(a_point_2)
-
+puts "%" * 50
 b_point_1 = CPoint.new(2,3)
 b_point_2 = CPoint.new(6,5)
 
